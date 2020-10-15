@@ -1,0 +1,80 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; }
+
+h1, h2, h3, h4, h5, h6, em, i {
+  font-weight: 100;
+  font-style: normal; }
+
+ul, ol, li {
+  list-style-type: none; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "Monda";
+  src: url("./fonts/monda.woff2"); }
+
+body {
+  background-color: #f6f8fa;
+  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif; }
+
+#app-layout {
+  padding-top: 2px;
+  max-width: 950px;
+  margin: 0 auto; }
+
+#app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  line-height: 2px;
+  background-color: #70A2AC;
+  padding: 0 20px; }
+
+#app-aside {
+  float: left;
+  width: 200px;
+  background-color: #fff; }
+
+#app-content {
+  margin-left: 200px; }
+
+.site-info {
+  text-align: center;
+  background-color: #70A2AC;
+  color: #fff;
+  padding: 20px 0 30px; }
+  .site-info .title a {
+    font-size: 20px;
+    color: #fff; }
+  .site-info .sub-title {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 4px; }
+
+.author-info {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px; }
+  .author-info img {
+    vertical-align: bottom;
+    border: 1px solid #E0EEF0;
+    width: 120px;
+    height: 120px; }
+  .author-info .author-name {
+    font-weight: 600;
+    padding-top: 5px; }
+  .author-info .author-description {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6); }
