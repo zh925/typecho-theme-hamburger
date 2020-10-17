@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <aside id="app-aside">
-    <div class="site-info">
+    <section class="site-info">
         <h1 class="title">
             <a href="<?php $this->options->siteUrl(); ?>">
                 <?php $this->options->title(); ?>
@@ -9,14 +9,19 @@
         <p class="sub-title">
             <?php $this->options->description(); ?>
         </p>
-    </div>
-    <div class="author-info">
+    </section>
+    <section class="author-info">
         <?php if ($this->options->avatarUrl) { ?>
             <img src="<?php $this->options->avatarUrl(); ?>" alt="">
         <?php } ?>
         <p class="author-name"><?php $this->options->author(); ?></p>
         <p class="author-description"><?php $this->options->profile(); ?></p>
-    </div>
+    </section>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)) { ?>
+        <section class="catalog">
+            <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
+        </section>
+    <?php } ?>
 </aside>
 <!--<div class="col-mb-12 col-offset-1 col-3 kit-hidden-tb" id="secondary" role="complementary">-->
 <!--    --><?php //if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>

@@ -9,11 +9,11 @@
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('includes/head.php');
 $this->need('includes/header.php');
 ?>
 
 <div id="app-layout">
-    <header id="app-header"></header>
 
     <?php $this->need('includes/sidebar.php') ?>
 
